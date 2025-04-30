@@ -2,3 +2,139 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.corner-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 200px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  z-index: 1000;
+}
+
+.centered-heading {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 50px;
+  margin-left: 220px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 270px);
+  background-color: white;
+  z-index: 900;
+}
+
+a, .nav-item {
+  color: black;
+  text-decoration: none;
+}
+
+.red-link {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.nav-item {
+  cursor: default;
+}
+
+a[href="/html/"]:nth-of-type(2) {
+  color: #FF0000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pink-oval {
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 18px;
+  transform-origin: center;
+}
+
+.arrow.top {
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg) scaleY(2);
+}
+
+.arrow-text {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.right-arrow-text {
+  position: absolute;
+  text-align: left;
+  width: 300px;
+  right: -400px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.arrow.bottom {
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg) scaleY(2);
+}
+
+.arrow.left {
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%) scaleY(2);
+}
+
+.arrow.right {
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg) scaleY(2);
+}
+
+.arrow.center {
+  top: -60px;
+  right: -60px;
+  transform: rotate(45deg) scaleY(2);
+}
+
+.oval-text {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+
+
+
+  
+ 
