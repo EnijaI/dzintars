@@ -684,11 +684,22 @@ body {
   gap: 10px;
 }
 
-.side-images img {
+.image-with-stars {
+  position: relative;
+  margin: 20px 0;
+}
+
+.image-with-stars img {
   width: 140px;
   border: 3px solid white;
   box-shadow: 0 0 6px rgba(0,0,0,0.2);
   border-radius: 8px;
+}
+
+.image-with-stars .star {
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
 
 .hidden {
