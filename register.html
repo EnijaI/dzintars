@@ -7,29 +7,55 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- LOGO + NAVIGĀCIJA -->
   <header class="header">
     <img src="logo.png" alt="Corner Image" class="corner-image">
     <nav class="navigation">
       <a href="index.html">Sākums</a>
-      <a href="par-mums.html">Par Mums</a>
+      <a href="par-mums.html" class="highlight">Par Mums</a>
       <a href="galerija.html">Galerija</a>
       <a href="piedāvājums.html">Piedāvājums</a>
       <a href="kontakti.html">Kontakti</a>
     </nav>
   </header>
 
-  <h1 class="centered-heading">Reģistrācija</h1>
+  <!-- ZVAIGZNES -->
+  <div class="stars">
+    <div class="star" style="top: 100px; left: 50px;"></div>
+    <div class="star" style="top: 180px; right: 60px;"></div>
+    <div class="star" style="top: 300px; left: 30px;"></div>
+    <div class="star" style="top: 400px; right: 40px;"></div>
+    <div class="star" style="top: 500px; left: 70px;"></div>
+    <div class="star" style="top: 600px; right: 100px;"></div>
+  </div>
 
+  <!-- VIRSRKSTS -->
+  <h1 class="centered-heading">Autorizācijas lapa</h1>
+
+  <!-- FORMA + DEKORS -->
   <div class="auth-container">
-    <form id="register-form" class="auth-form">
+    <form class="auth-form">
       <label>Vārds, Uzvārds:<br><input type="text" placeholder="[Ievadiet savu vārdu un uzvārdu...]"></label><br>
       <label>E-pasts:<br><input type="email" placeholder="[Ievadiet savu e-pasta adresi...]"></label><br>
       <label>Parole:<br><input type="password" placeholder="[Izvēlieties drošu paroli...]"></label><br>
       <label>Apstiprināt paroli:<br><input type="password" placeholder="[Ievadiet paroli vēlreiz...]"></label><br>
       <label><input type="checkbox"> Piekrītu lietošanas noteikumiem</label><br>
-      <button type="submit">[ Reģistrēties ]</button><br>
-      <a href="autorizācija lapai.html">Jau ir konts? [Pieslēgties]</a>
+      <button type="button" onclick="alert('Reģistrācija veiksmīga!')">[ Reģistrēties ]</button><br>
+      <a href="autorizacija-lapai.html">Jau ir konts? [Pieslēgties]</a>
     </form>
+
+    <div class="side-images">
+      <img src="attels1.jpg" alt="Dekors">
+    </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-bar">
+    <hr class="footer-divider">
+    <div class="footer-links">
+      <a href="sudzibasformas.pieteikums.html">Sūdzības formas pieteikums</a>
+      <a href="autorizacija-lapai.html">Autorizācija lapai</a>
+    </div>
+  </footer>
 </body>
 </html>
