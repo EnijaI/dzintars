@@ -1,17 +1,5 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-  const username = document.querySelector('input[name="username"]').value;
-  const password = document.querySelector('input[name="password"]').value;
 
-  if (!username || !password) {
-    event.preventDefault(); // Aptur sūtīšanu
-    alert("Lūdzu, ievadiet gan lietotājvārdu, gan paroli!");
-  }
-});
-window.onload = function() {
-  alert("Laipni lūdzam mūsu mājaslapā!");
-};
-document.querySelector('.links a').addEventListener('click', function(event) {
-
+// Image switching function
 function mainitAttelu(imgElement, newSrc) {
   const originalSrc = imgElement.src;
   
@@ -22,6 +10,24 @@ function mainitAttelu(imgElement, newSrc) {
   }
 }
 
+// Form submission handling
+document.querySelector("form")?.addEventListener("submit", function(event) {
+  const username = document.querySelector('input[name="username"]')?.value;
+  const password = document.querySelector('input[name="password"]')?.value;
+
+  if (!username || !password) {
+    event.preventDefault();
+    alert("Lūdzu, ievadiet gan lietotājvārdu, gan paroli!");
+  }
+});
+
+// Welcome message
+window.onload = function() {
+  alert("Laipni lūdzam mūsu mājaslapā!");
+};
+
+// Password reset link
+document.querySelector('.links a')?.addEventListener('click', function(event) {
   event.preventDefault();
   alert("Paroles atjaunošanas iespēja vēl nav pieejama.");
 });
