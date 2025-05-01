@@ -1,9 +1,8 @@
-
 // Image switching function
 function mainitAttelu(imgElement, newSrc) {
   const originalSrc = imgElement.getAttribute('src');
   const currentSrc = imgElement.src;
-  
+
   if (currentSrc.includes(newSrc)) {
     imgElement.src = originalSrc;
   } else {
