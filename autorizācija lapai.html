@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="lv">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Autorizācija lapai</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- Logo -->
+<head>
+  <meta charset="UTF-8">
+  <title>Autorizācijas lapa</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="auth.js"></script>
+</head>
+<body>
+  <header class="header">
     <img src="logo.png" alt="Corner Image" class="corner-image">
-
-    <!-- Navigation Bar -->
     <nav class="navigation">
-      <a href="index.html" style="color: red;">Sākums</a>
-      <a href="par-mums.html">Par mums</a>
+      <a href="index.html">Sākums</a>
+      <a href="par-mums.html" class="highlight">Par Mums</a>
       <a href="galerija.html">Galerija</a>
       <a href="piedāvājums.html">Piedāvājums</a>
       <a href="kontakti.html">Kontakti</a>
     </nav>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  </header>
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Corner Image" class="corner-image">
+  <h1 class="centered-heading">Autorizācijas lapa</h1>
 
-    <!-- Navigation Bar -->
-    <nav class="navigation">
-      <a href="index.html" style="color: red;">Sākums</a>
-      <a href="par-mums.html">Par mums</a>
-      <a href="galerija.html">Galerija</a>
-      <a href="piedāvājums.html">Piedāvājums</a>
-      <a href="kontakti.html">Kontakti</a>
-    </nav>
+  <div class="auth-container">
 
+    <!-- Pierakstīšanās -->
+    <form id="login-form" class="auth-form">
+      <label>Username:<br><input type="text" placeholder="[Enter your username...]"></label><br>
+      <label>Password:<br><input type="password" placeholder="[Enter your password...]"></label><br>
+      <label><input type="checkbox"> Remember me</label><br>
+      <button type="submit">[ Log In ]</button><br>
+      <a href="#">Forgot your password?</a><br>
+      <a href="#" onclick="toggleForms()">Don't have an account? [Sign Up]</a>
+    </form>
 
+    <!-- Reģistrēšanās -->
+    <form id="register-form" class="auth-form hidden">
+      <label>Vārds, Uzvārds:<br><input type="text" placeholder="[Ievadiet savu vārdu un uzvārdu...]"></label><br>
+      <label>E-pasts:<br><input type="email" placeholder="[Ievadiet savu e-pasta adresi...]"></label><br>
+      <label>Parole:<br><input type="password" placeholder="[Izvēlieties drošu paroli...]"></label><br>
+      <label>Apstiprināt paroli:<br><input type="password" placeholder="[Ievadiet paroli vēlreiz...]"></label><br>
+      <label><input type="checkbox"> Piekrītu lietošanas noteikumiem</label><br>
+      <button type="submit">[ Reģistrēties ]</button><br>
+      <a href="#" onclick="toggleForms()">Jau ir konts? [Pieslēgties]</a>
+    </form>
 
-    <!-- Footer Links -->
-    <a href="autorizācija lapai.html" style="position: absolute; bottom: 0px; right: 0px;">Autorizācija lapai </a>
-    <a href="sūdzībasformaspieteikums.html" style="position: absolute; bottom: 0px; left: 0px;">Sūdzības formas pieteikums</a>
-   
-    <div class="login-container" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h1>Autorizācijas lapa</h1>
-      <form>
-        <label for="username">👤 Username:</label>
-        <input type="text" id="username" placeholder="Enter your username...">
-        <br>
-        <br>
-        <label for="password">🔒 Password:</label>
-        <input type="password" id="password" placeholder="Enter your password...">
-        <br>
-        <br>
-        <input type="checkbox" id="remember-me">
-        <label for="remember-me">✅ ⬜ Remember me</label>
-        <br>
-        <br>
-        <button type="submit">🔵 [ Log In ]</button>
-        <br>
-        <br>
-        <a href="#">🔗 Forgot your password?</a>
-        <br>
-        <br>
-        <a href="#">🔗 Don't have an account? [Sign Up]</a>
-      </form>
+    <div class="side-images">
+      <img src="attels2.jpg" alt="Dekors">
+      <img src="attels3.jpg" alt="Dekors">
     </div>
-      </form>
+  </div>
+
+  <footer class="footer-bar">
+    <hr class="footer-divider">
+    <div class="footer-links">
+      <a href="sudzibasformas.pieteikums.html">Sūdzības formas pieteikums</a>
+      <a href="autorizacija-lapai.html">Autorizācija lapai</a>
     </div>
-  </head>
-  <body>
-  </body>
+  </footer>
+</body>
 </html>

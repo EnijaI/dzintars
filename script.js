@@ -29,3 +29,12 @@ document.querySelector('.links a')?.addEventListener('click', function(event) {
   event.preventDefault();
   alert("Paroles atjaunošanas iespēja vēl nav pieejama.");
 });
+
+
+
+function toggleForms() {
+  const login = document.getElementById("login-form");
+  const register = document.getElementById("register-form");
+  login.classList.toggle("hidden");
+  register.classList.toggle("hidden");
+}
