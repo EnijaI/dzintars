@@ -6,18 +6,5 @@ document.querySelector('input[name="remember-me"]').addEventListener('change', f
     }
 
 
-    function mainitAttelu(imgElement, newSrc) {
-        const originalSrc = imgElement.src;
-
-        imgElement.onclick = function() {
-            if (imgElement.src.includes(newSrc)) {
-                imgElement.src = originalSrc;
-            } else {
-                imgElement.src = newSrc;
-            }
-        };
-
-        // Uzreiz iestata pirmo klikšķi (uz jauno bildi)
-        imgElement.onclick();
-    }
+    
 });

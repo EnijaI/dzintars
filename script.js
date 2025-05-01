@@ -11,6 +11,17 @@ window.onload = function() {
   alert("Laipni lūdzam mūsu mājaslapā!");
 };
 document.querySelector('.links a').addEventListener('click', function(event) {
+
+function mainitAttelu(imgElement, newSrc) {
+  const originalSrc = imgElement.src;
+  
+  if (imgElement.src.includes(newSrc)) {
+    imgElement.src = originalSrc;
+  } else {
+    imgElement.src = newSrc;
+  }
+}
+
   event.preventDefault();
   alert("Paroles atjaunošanas iespēja vēl nav pieejama.");
 });
