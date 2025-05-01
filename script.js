@@ -24,7 +24,21 @@ document.querySelector("#login-form")?.addEventListener("submit", function(event
   }
 });
 
+// Registration form handling
+document.querySelector(".auth-form")?.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const name = this.querySelector('input[type="text"]')?.value;
+  const email = this.querySelector('input[type="email"]')?.value;
+  const password = this.querySelector('input[type="password"]')?.value;
+  const checkbox = this.querySelector('input[type="checkbox"]')?.checked;
 
+  if (!name || !email || !password || !checkbox) {
+    alert("Lūdzu, aizpildiet visus laukus un piekrītiet noteikumiem!");
+  } else {
+    alert("Reģistrācija veiksmīga!");
+    window.location.href = "autorizācija lapai.html";
+  }
+});
 
 // Password reset link
 document.querySelector('.links a')?.addEventListener('click', function(event) {
