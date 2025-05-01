@@ -3,10 +3,13 @@
 function mainitAttelu(imgElement, newSrc) {
   const currentSrc = imgElement.src;
   const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-  const originalSrc = currentSrc.replace(baseUrl, '');
-  const originalName = originalSrc.includes('b.jpg') ? originalSrc.replace('b.jpg', '.jpg') : newSrc;
+  const originalSrc = imgElement.getAttribute('src');
   
-  imgElement.src = originalSrc === originalName ? newSrc : originalName;
+  if (currentSrc.includes(newSrc)) {
+    imgElement.src = originalSrc;
+  } else {
+    imgElement.src = newSrc;
+  }
 }
 
 // Form submission handling
