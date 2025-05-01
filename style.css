@@ -241,27 +241,6 @@ header {
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 5px;
-  position: relative;
-}
-
-.image-frame::before,
-.image-frame::after {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: pink;
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
-
-.image-frame::before {
-  top: -10px;
-  left: -10px;
-}
-
-.image-frame::after {
-  bottom: -10px;
-  right: -10px;
 }
 
 .image-frame img {
