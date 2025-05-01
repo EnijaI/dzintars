@@ -1,15 +1,8 @@
 
 // Image switching function
 function mainitAttelu(imgElement, newSrc) {
-  const currentSrc = imgElement.src;
-  const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
   const originalSrc = imgElement.getAttribute('src');
-  
-  if (currentSrc.includes(newSrc)) {
-    imgElement.src = originalSrc;
-  } else {
-    imgElement.src = newSrc;
-  }
+  imgElement.src = imgElement.src.includes('b.jpg') ? originalSrc : newSrc;
 }
 
 // Form submission handling
