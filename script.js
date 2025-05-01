@@ -12,13 +12,15 @@ function mainitAttelu(imgElement, newSrc) {
 }
 
 // Form submission handling
-document.querySelector("form")?.addEventListener("submit", function(event) {
-  const username = document.querySelector('input[name="username"]')?.value;
-  const password = document.querySelector('input[name="password"]')?.value;
+document.querySelector("#login-form")?.addEventListener("submit", function(event) {
+  event.preventDefault();
+  const username = this.querySelector('input[type="text"]')?.value;
+  const password = this.querySelector('input[type="password"]')?.value;
 
   if (!username || !password) {
-    event.preventDefault();
     alert("Lūdzu, ievadiet gan lietotājvārdu, gan paroli!");
+  } else {
+    alert("Esi veiksmīgi pieslēdzies!");
   }
 });
 
