@@ -40,9 +40,9 @@ document.querySelector(".auth-form")?.addEventListener("submit", function(event)
 });
 
 // Password reset link
-document.querySelector('.links a')?.addEventListener('click', function(event) {
+document.querySelector('a[href="#"]')?.addEventListener('click', function(event) {
   event.preventDefault();
-  alert("Paroles atjaunošanas iespēja vēl nav pieejama.");
+  alert("Atvainojamies, vēl šī funkcija nav pieejama.");
 });
 
 
