@@ -14,10 +14,3 @@ document.querySelector('.links a').addEventListener('click', function(event) {
   event.preventDefault();
   alert("Paroles atjaunošanas iespēja vēl nav pieejama.");
 });
-document.querySelector('input[name="remember-me"]').addEventListener('change', function() {
-  if (this.checked) {
-    alert("Tavs lietotājvārds tiks atcerēts!");
-  } else {
-    alert("Tavs lietotājvārds netiks atcerēts.");
-  }
-});
