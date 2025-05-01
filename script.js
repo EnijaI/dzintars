@@ -20,10 +20,7 @@ document.querySelector("form")?.addEventListener("submit", function(event) {
   }
 });
 
-// Welcome message
-window.onload = function() {
-  alert("Laipni lūdzam mūsu mājaslapā!");
-};
+
 
 // Password reset link
 document.querySelector('.links a')?.addEventListener('click', function(event) {
